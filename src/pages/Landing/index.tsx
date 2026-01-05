@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import styles from './styles.module.css'
+import { Link } from 'react-router'
 
 function LandingPageCard() {
   return (
-    <a href="#" className={styles.card}>
+    <Link to="/fintech" className={styles.card}>
       <div className={styles.imagePlaceholder}>
         <img src="https://placehold.co/300x200" alt="Landing Page Preview" className={styles.cardImage} />
       </div>
       <h3 className={styles.cardTitle}>Landing Page 1</h3>
-    </a>
+    </Link>
   )
 }
 
