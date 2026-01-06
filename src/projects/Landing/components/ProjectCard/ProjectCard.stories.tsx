@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Button from './Button';
+import ProjectCard from './ProjectCard';
 
 const meta = {
-  title: 'Fintech/Button',
-  component: Button,
-} satisfies Meta<typeof Button>;
+  title: 'Projects/Landing/ProjectCard',
+  component: ProjectCard,
+} satisfies Meta<typeof ProjectCard>;
 
 export default meta;
 

@@ -30,7 +30,7 @@ function SortFilter() {
   )
 }
 
-export default function Page() {
+export default function LandingPage() {
   const [searchInput, setSearchInput] = useState('')
 
   return (
