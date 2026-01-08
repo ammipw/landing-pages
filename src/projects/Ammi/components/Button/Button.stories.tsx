@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import SearchBox from './SearchBox';
+import Button from './Button';
 
 const meta = {
-  title: 'Projects/Landing/SearchBox',
-  component: SearchBox,
-} satisfies Meta<typeof SearchBox>;
+  title: 'Projects/Ammi/Button',
+  component: Button
+} satisfies Meta<typeof Button>;
 
 export default meta;
 

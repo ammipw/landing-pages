@@ -30,7 +30,7 @@ function SortFilter() {
   )
 }
 
-export default function LandingPage() {
+export default function Dribbble() {
   const [searchInput, setSearchInput] = useState('')
 
   return (

@@ -1,2 +1,2 @@
-export { default as Landing } from './Landing'
+export { default as Dribbble } from './Dribbble'
 export { default as Fintech } from './Fintech'
