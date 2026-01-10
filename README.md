@@ -4,12 +4,15 @@ Landing pages built with React and TypeScript. This project showcases reusable c
 
 ## Tech Stack
 
-- Vite
-- React
+- [Vite](https://vitejs.dev/)
+- [React](https://react.dev/)
 - TypeScript
-- React Router
+- CSS
+- [Storybook](https://storybook.js.org/)
 
 ## Projects
 
-0. This
-1. https://dribbble.com/shots/24820686-Finpay-Fintech-Landing-Page
+1. [Personal Website](https://ammi.dev)
+3. [Dribbble](https://dribbble.com)
+2. [Fintech Landing Page](https://dribbble.com/shots/24820686-Finpay-Fintech-Landing-Page)
+4. [Squarespace Templates](https://www.squarespace.com/templates)
