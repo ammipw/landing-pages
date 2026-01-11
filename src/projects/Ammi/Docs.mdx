@@ -1,15 +1,37 @@
-import { Meta } from '@storybook/addon-docs/blocks'
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks'
 
 <Meta title="Projects/Ammi/Docs" />
 
-# Introduction
+# Style Guide
 
-This is the documentation page for the Ammi project components.
+This is the documentation page for the [Ammi](https://ammi.dev) project components.
 
-# Colour Palette
+This project uses Tailwind CSS for styling and follows a design system that emphasizes simplicity and usability.
 
-# Typography
+## Colour Palette
 
-# Spacing & Layout
+<ColorPalette>
+    <ColorItem
+        title="Primary"
+        colors={{
+            Background: 'var(--color-neutral-950)',
+            Headings: 'var(--color-neutral-200)',
+            Text: 'var(--color-neutral-400)',
+            Accent: 'var(--color-sky-600)',
+        }}
+    />
+</ColorPalette>
 
-# Icons
+## Typography
+
+**Font Family:** Instrument Sans, Instrument Sans Fallback
+
+### Headings
+**Weight: 700 (Bold)**
+
+### Body
+**Weight: 400 (Regular)**
+
+## Spacing & Layout
+
+## Icons

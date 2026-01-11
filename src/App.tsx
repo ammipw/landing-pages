@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from 'react-router'
-import { Fintech, Landing } from './projects'
+import { Dribbble, Fintech } from './projects'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Landing />,
+    element: <Dribbble />,
   },
   {
     path: '/fintech',
