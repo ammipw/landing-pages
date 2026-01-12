@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from './styles.module.css'
+import styles from '../styles.module.css'
 import { Link } from 'react-router'
 
 function LandingPageCard() {
@@ -30,7 +30,7 @@ function SortFilter() {
   )
 }
 
-export default function Dribbble() {
+export default function LandingPage() {
   const [searchInput, setSearchInput] = useState('')
 
   return (
