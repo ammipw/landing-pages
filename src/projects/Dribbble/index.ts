@@ -1,2 +1,2 @@
-export { default as DribbbleHome } from './pages/landing'
-export { default as DribbbleSearch } from './pages/search'
+export { default as Landing } from './pages/landing'
+export { default as Search } from './pages/search'

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import NavLink from './NavLink';
 
 const meta = {
-  title: 'Projects/Dribbble/NavLink',
+  title: 'Rebuilds/Dribbble/NavLink',
   component: NavLink,
 } satisfies Meta<typeof NavLink>;
 

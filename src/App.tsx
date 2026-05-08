@@ -1,6 +1,6 @@
 import { createBrowserRouter, Link, RouterProvider } from 'react-router'
-import { DribbbleHome, DribbbleSearch } from './projects/Dribbble'
-import Ammi from './projects/Ammi'
+import { Landing, Search } from './Rebuilds/dribbble'
+import Ammi from './Rebuilds/ammi'
 
 const router = createBrowserRouter([
   {
@@ -13,11 +13,11 @@ const router = createBrowserRouter([
   },
   {
     path: '/dribbble',
-    element: <DribbbleHome />,
+    element: <Landing />,
   },
   {
     path: '/dribbble/search',
-    element: <DribbbleSearch />,
+    element: <Search />,
   }
 ])
 
@@ -35,10 +35,9 @@ function Home() {
       <ul>
         <li><Link to="/ammi">Ammi</Link></li>
         <li>
-          Dribbble
+          <li><Link to="/dribbble">Dribbble</Link></li>
           <ul>
-            <li><Link to="/dribbble">Landing</Link></li>
-            <li><Link to="/dribbble/search">Search</Link></li>
+            <li><Link to="/dribbble/search">/search</Link></li>
           </ul>
         </li>
       </ul>

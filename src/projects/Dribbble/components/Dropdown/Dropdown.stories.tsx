@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import Dropdown from './Dropdown';
 
 const meta = {
-  title: 'Projects/Dribbble/Dropdown',
+  title: 'Rebuilds/Dribbble/Dropdown',
   component: Dropdown,
 } satisfies Meta<typeof Dropdown>;
 

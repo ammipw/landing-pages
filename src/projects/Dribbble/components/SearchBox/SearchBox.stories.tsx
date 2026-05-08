@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import SearchBox from './SearchBox';
 
 const meta = {
-  title: 'Projects/Dribbble/SearchBox',
+  title: 'Rebuilds/Dribbble/SearchBox',
   component: SearchBox,
 } satisfies Meta<typeof SearchBox>;
 

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Button from './Button';
+import Link from './Link';
 
 const meta = {
-  title: 'Template/Button',
-  component: Button
-} satisfies Meta<typeof Button>;
+  title: 'UI Kit/Link',
+  component: Link
+} satisfies Meta<typeof Link>;
 
 export default meta;
 

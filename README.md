@@ -1,4 +1,4 @@
-# Landing Pages
+# Frontend Developer
 
 Landing pages built with React and TypeScript. This project showcases reusable components designed to streamline the development of landing pages for various applications.
 
