@@ -1,0 +1,40 @@
+:root {
+  /* Colors */
+  --stripe-color-primary: #0070f3;
+  --stripe-color-secondary: #1c1c1e;
+  --stripe-color-background: #ffffff;
+  --stripe-color-text: #333333;
+
+  /* Fonts */
+  --stripe-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --stripe-font-size: 100%;
+}
+
+#storybook-root {
+  font-family: var(--stripe-font-sans);
+}
+
+#storybook-root button,
+#storybook-root input,
+#storybook-root select,
+#storybook-root textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--stripe-font-sans);
+  background-color: var(--stripe-color-background);
+  color: var(--stripe-color-text);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

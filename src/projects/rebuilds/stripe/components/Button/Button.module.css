@@ -1,0 +1,54 @@
+.btn {
+  position: relative;
+  cursor: pointer;
+  --bg-color: white;
+  --color: var(--stripe-color-primary);
+  --font-weight: 600;
+  --border-radius: 4px;
+  --padding: .4em .8em;
+  --border: 2px solid transparent;
+
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-weight: var(--font-weight);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  border: var(--border);
+}
+
+.btn-fill-light,
+.btn-fill-dark {
+  --color: white;
+}
+
+.btn-fill-light {
+  --bg-color: var(--stripe-color-primary);
+}
+
+.btn-fill-dark {
+  --bg-color: var(--stripe-color-secondary);
+}
+
+.btn-fill-none {
+  --bg-color: transparent;
+}
+
+.btn-ghost {
+  --color: var(--stripe-color-primary);
+  --border: 2px solid transparent;
+}
+
+.btn-outline {
+  --border: 2px solid var(--stripe-color-primary);
+}
+
+.btn::after {
+  content: '>';
+  display: none;
+}
+
+.btn-arrow::after {
+  display: inline-block;
+  margin-left: 8px;
+  transition: opacity 0.3s ease, margin-left 0.3s ease;
+}

@@ -4,7 +4,8 @@ import Button from './Button';
 
 const meta = {
   title: 'UI Kit/Button',
-  component: Button
+  component: Button,
+  // tags: ['!dev']
 } satisfies Meta<typeof Button>;
 
 export default meta;

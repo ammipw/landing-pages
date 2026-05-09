@@ -1,6 +1,6 @@
 import { createBrowserRouter, Link, RouterProvider } from 'react-router'
-import { Landing, Search } from './Rebuilds/dribbble'
-import Ammi from './Rebuilds/ammi'
+import { Landing, Search } from './projects/rebuilds/dribbble'
+import Ammi from './projects/originals/ammi'
 
 const router = createBrowserRouter([
   {

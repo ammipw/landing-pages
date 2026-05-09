@@ -13,3 +13,15 @@ html, body {
 a, button {
     cursor: pointer;
 }
+
+:root {
+  /* Colors */
+  --stripe-color-primary: #0070f3;
+  --stripe-color-secondary: #1c1c1e;
+  --stripe-color-background: #ffffff;
+  --stripe-color-text: #333333;
+
+  /* Fonts */
+  --stripe-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --stripe-font-size: 100%;
+}

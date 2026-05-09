@@ -1,5 +1,7 @@
 # Frontend Developer
 
+I'm Ami, a developer with a passion for creating engaging, user-friendly applications. I build responsive interfaces that are visually appealing, accessible, and performant.
+
 Landing pages built with React and TypeScript. This project showcases reusable components designed to streamline the development of landing pages for various applications.
 
 ## Tech Stack
