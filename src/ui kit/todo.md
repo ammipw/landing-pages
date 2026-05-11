@@ -3,13 +3,16 @@ The baseline — every portfolio needs these
 Hiring managers expect these. Missing them signals inexperience with design systems.
 
 Button (variants + states)
-Input / TextField
-Modal / Dialog
-Toast / Snackbar
+Input / TextField ^
+Modal* / Dialog
+Toast* / Snackbar
 Avatar
-Badge / Chip
+Badge / Chip ^
 Card
 Tabs
+
+* only make one
+^ make both
 
 
 ◈ Nice to have

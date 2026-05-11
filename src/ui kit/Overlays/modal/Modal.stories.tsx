@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Link from './Link';
+import Modal from './Modal';
 
 const meta = {
-  title: 'UI Kit/Link',
-  component: Link
-} satisfies Meta<typeof Link>;
+  title: "UI Kit/Overlays/Modal",
+  component: Modal,
+} satisfies Meta<typeof Modal>;
 
 export default meta;
 

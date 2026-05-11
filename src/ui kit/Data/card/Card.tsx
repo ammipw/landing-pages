@@ -1,0 +1,7 @@
+interface CardProps {}
+
+function Card(props: CardProps) {
+  return <div>Card</div>
+}
+
+export default Card

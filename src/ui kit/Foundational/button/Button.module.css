@@ -1,0 +1,32 @@
+.btn {
+  --padding-default: 0.5rem 1rem;
+  --background-color-default: transparent;
+  --background-color-filled: var(--color-gray-200);
+  --color-default: var(--color-gray-800);
+
+  padding: var(--padding-default);
+  background-color: var(--background-color-default);
+
+  &.filled {
+    --background-color-default: var(--background-color-filled);
+    color: var(--color-default);
+  }
+
+  &.medium {
+    font-size: 1rem;
+  }
+
+  &.round {
+    border-radius: 9999px;
+  }
+
+  &.square {
+    border-radius: 4px;
+  }
+}
+
+.btn.toggle {
+  &.selected {
+    --background-color-default: var(--color-blue-500);
+  }
+}

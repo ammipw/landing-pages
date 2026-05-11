@@ -1,17 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Button from './Button';
+import Chip from './Chip';
 
 const meta = {
-  title: 'UI Kit/Button',
-  component: Button,
-  // tags: ['!dev']
-} satisfies Meta<typeof Button>;
+  title: "UI Kit/Foundational/Chip",
+  component: Chip,
+} satisfies Meta<typeof Chip>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  args: {}
+  args: {
+    children: "Example Chip"
+  }
 };

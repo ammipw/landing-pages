@@ -68,3 +68,8 @@ For every component, write stories that cover:
 4. **Accessibility** — include `a11y` addon results
 
 This combination covers breadth (design system foundations), depth (complex interactions), and real-world practicality — exactly what hiring managers look for.
+
+
+Additional:
+3d visualisation
+Realtime data
