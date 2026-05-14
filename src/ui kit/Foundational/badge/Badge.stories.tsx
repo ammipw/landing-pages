@@ -13,7 +13,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    value: "New"
+    // value: 10
   },
   render: (args) => (
     <button className="relative inline-block p-4 hover:bg-gray-100 rounded group">

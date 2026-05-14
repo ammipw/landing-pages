@@ -4,7 +4,7 @@ import styles from './Button.module.css'
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode
   variant?: 'default' | 'toggle'
-  colour?: 'elevated' | 'filled' | 'tonal' | 'outlined' | 'text'
+  colour?: 'filled' | 'elevated' | 'tonal' | 'outlined' | 'text'
   size?: 'small' | 'medium' | 'large'
   icon?: React.ReactNode
   shape?: 'round' | 'square'
@@ -23,8 +23,8 @@ function Button({
   defaultSelected = false,
   onClick,
   ...props }: ButtonProps) {
-  const [isSelected, setIsSelected] = useState(defaultSelected)
   const isControlled = selected !== undefined
+  const [isSelected, setIsSelected] = useState(defaultSelected)
   const resolvedSelected = isControlled ? selected : isSelected;
 
   return (

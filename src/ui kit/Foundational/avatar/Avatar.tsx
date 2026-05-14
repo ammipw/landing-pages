@@ -5,10 +5,11 @@ interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
     imageUrl?: string
     location?: string
   },
-  orientation?: 'horizontal' | 'vertical'
+  orientation?: 'horizontal' | 'vertical',
+  size?: 'small' | 'medium' | 'large'
 }
 
-function PlaceholderAvatar({name}: {name: string}) {
+function Fallback({name}: {name: string}) {
   const initials = name.split(' ').map(n => n.charAt(0)).join('');
 
   return (
@@ -18,7 +19,7 @@ function PlaceholderAvatar({name}: {name: string}) {
   )
 }
 
-function Avatar({ user, orientation = 'horizontal', ...props }: AvatarProps) {
+function Avatar({ user, orientation = 'horizontal', size = 'medium', ...props }: AvatarProps) {
   return (
     <div {...props}
       className={`inline-flex ${orientation === 'horizontal' ? 'flex-row' : 'flex-col'} items-center`}
@@ -26,7 +27,7 @@ function Avatar({ user, orientation = 'horizontal', ...props }: AvatarProps) {
       {user.imageUrl ? (
         <img src={user.imageUrl} alt={user.name} className="rounded-full size-24" />
       ) : (
-        <PlaceholderAvatar name={user.name} />
+        <Fallback name={user.name} />
       )}
       <div className={`${orientation === 'vertical' ? 'mt-4 text-center' : 'ml-4'}`}>
         <h3 className="text-lg font-semibold">{user.name}</h3>

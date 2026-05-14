@@ -5,6 +5,7 @@ import Avatar from './Avatar';
 const meta = {
   title: "UI Kit/Foundational/Avatar",
   component: Avatar,
+  tags: ['!dev'],
 } satisfies Meta<typeof Avatar>;
 
 export default meta;

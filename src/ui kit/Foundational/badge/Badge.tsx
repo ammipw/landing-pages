@@ -1,13 +1,16 @@
+import styles from './Badge.module.css';
+
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
-  value?: string | number;
+  value?: number;
+  max_value?: number;
 }
 
-function Badge({ value, ...props }: BadgeProps) {
+function Badge({ value, max_value = 999, ...props }: BadgeProps) {
   return (
     <span {...props}
-      className="absolute top-0 right-0 translate-x-1/3 -translate-y-1/3 px-2 py-1 bg-red-300 rounded-full text-sm text-red-900"
+      className={`${styles.badge} ${value !== undefined ? styles.large : styles.small} ${props.className || ''}`}
     >
-      {value}
+      {value && (value > max_value ? `${max_value}+` : value)}
     </span>
   )
 }

@@ -3,17 +3,30 @@
   --background-color-default: transparent;
   --background-color-filled: var(--color-gray-200);
   --color-default: var(--color-gray-800);
+  --shadow-elevated: 0 1px 3px rgba(0, 0, 0, 0.2);
+  --border-default: 1px solid var(--background-color-default);
+  --border-outlined: 1px solid var(--color-gray-300);
 
   padding: var(--padding-default);
   background-color: var(--background-color-default);
+  border: var(--border-default);
+  color: var(--color-default);
 
   &.filled {
     --background-color-default: var(--background-color-filled);
     color: var(--color-default);
   }
 
+  &.small {
+    font-size: var(--text-sm);
+  }
+
   &.medium {
-    font-size: 1rem;
+    font-size: var(--text-base);
+  }
+
+  &.large {
+    font-size: var(--text-lg);
   }
 
   &.round {
@@ -22,6 +35,24 @@
 
   &.square {
     border-radius: 4px;
+  }
+
+  &.elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  &.tonal {
+    --background-color-default: var(--color-gray-100);
+    color: var(--color-gray-800);
+  }
+
+  &.outlined {
+    border: var(--border-outlined);
+  }
+
+  &.text {
+    --background-color-default: transparent;
+    color: var(--color-gray-800);
   }
 }
 

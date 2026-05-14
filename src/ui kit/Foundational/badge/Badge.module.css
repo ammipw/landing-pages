@@ -1,0 +1,25 @@
+.badge {
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  background-color: var(--color-red-400);
+  border-radius: 9999px; /* Full rounding */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  color: var(--color-red-50);
+  font-weight: 500;
+  text-align: center;
+
+  &.small {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    translate: -50% 50%;
+  }
+
+  &.large {
+    min-width: 20px;
+    height: 20px;
+    padding: 0 0.4rem;
+  }
+}
