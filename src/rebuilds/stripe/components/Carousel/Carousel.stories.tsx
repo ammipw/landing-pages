@@ -5,6 +5,7 @@ import Carousel from './Carousel';
 const meta = {
   title: 'Rebuilds/Stripe/Carousel',
   component: Carousel,
+  tags: ['!dev'],
 } satisfies Meta<typeof Carousel>;
 
 export default meta;

@@ -5,6 +5,7 @@ import Button from './Button';
 const meta = {
   title: 'Rebuilds/Stripe/Button',
   component: Button,
+  tags: ['autodocs'],
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -25,10 +26,10 @@ const fills = ['light', 'dark', 'none'];
 const arrows = [false, true];
 const outlines = [false, true];
 
-export const AllVariants = {
-  render: () => (
-    <div>
-      <h2>All Button Variants</h2>
-    </div>
-  ),
-};
+// export const AllVariants = {
+//   render: () => (
+//     <div>
+//       <h2>All Button Variants</h2>
+//     </div>
+//   ),
+// };
