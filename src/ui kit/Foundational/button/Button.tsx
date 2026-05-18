@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import styles from './styles/Button.module.css'
+import styles from './Button.module.css'
 import { ChevronUp } from 'lucide-react'
 
-interface ButtonBaseProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+// Button Base component that handles all the logic and styling for different button variants
+type ButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   ref?: React.Ref<HTMLButtonElement>
   variant?: 'default' | 'toggle' | 'split' | 'icon'
   colour?: 'filled' | 'elevated' | 'tonal' | 'outlined' | 'text'
@@ -55,51 +56,64 @@ function ButtonBase({
   )
 }
 
-export interface ButtonProps extends Omit<ButtonBaseProps, 'variant' | 'selected' | 'defaultSelected'> {}
+// Standard Button
+export type ButtonProps = Omit<ButtonBaseProps, 'variant' | 'selected' | 'defaultSelected'>
 
 export const Button = ({ ref, children, ...props }: ButtonProps) => {
   return (
-    <ButtonBase ref={ref} {...props}>
+    <ButtonBase {...props}>
       {children}
     </ButtonBase>
   )
 }
 
-interface ToggleButtonProps extends Omit<ButtonBaseProps, 'variant'> {}
+Button.displayName = 'Button'
 
-function ToggleButton({ ref, children, ...props }: ToggleButtonProps) {
+// Toggle Button
+type ToggleButtonProps = Omit<ButtonBaseProps, 'variant'> & {}
+
+export const ToggleButton = ({ ref, children, ...props }: ToggleButtonProps) => {
   return (
-    <ButtonBase ref={ref} {...props} variant="toggle">
+    <ButtonBase {...props} variant="toggle">
       {children}
     </ButtonBase>
   )
 }
 
-interface IconButtonProps extends Omit<ButtonBaseProps, 'variant' | 'children'> {
+ToggleButton.displayName = 'ToggleButton'
+
+// Icon Button
+type IconButtonProps = Omit<ButtonBaseProps, 'variant' | 'children'> & {
   icon: React.ReactElement
 }
 
-function IconButton({ ref, icon, ...props }: IconButtonProps) {
+export const IconButton = ({ ref, icon, ...props }: IconButtonProps) => {
   return (
-    <ButtonBase ref={ref} {...props} variant="icon" icon={icon} />
+    <ButtonBase {...props} variant="icon" icon={icon} />
   )
 }
 
-interface ToggleIconButtonProps extends Omit<ButtonBaseProps, 'variant' | 'children'> {
+IconButton.displayName = 'IconButton'
+
+// Toggle Icon Button
+type ToggleIconButtonProps = Omit<ButtonBaseProps, 'variant' | 'children'> & {
   icon: React.ReactElement
 }
 
-function ToggleIconButton({ ref, icon, ...props }: ToggleIconButtonProps) {
+export const ToggleIconButton = ({ ref, icon, ...props }: ToggleIconButtonProps) => {
   return (
-    <ButtonBase ref={ref} {...props} variant="toggle" icon={icon} />
+    <ButtonBase {...props} variant="toggle" icon={icon} />
   )
 }
 
-interface SplitButtonProps extends Omit<ButtonBaseProps, 'variant'> {}
+ToggleIconButton.displayName = 'ToggleIconButton'
 
-function SplitButton({ ref, children, ...props }: SplitButtonProps) {
+// Split Button
+type SplitButtonProps = Omit<ButtonBaseProps, 'variant'> & {}
+
+export const SplitButton = ({ ref, children, ...props }: SplitButtonProps) => {
   return (
-    <ButtonBase ref={ref} {...props} variant="split" className={styles.split}>
+    <ButtonBase {...props} variant="split" className={styles.split}>
       <span className='content'>{children}</span>
       <span className='indicator'>
         <ChevronUp size={16}/>
@@ -108,10 +122,4 @@ function SplitButton({ ref, children, ...props }: SplitButtonProps) {
   )
 }
 
-Button.displayName = 'Button'
-ToggleButton.displayName = 'ToggleButton'
-IconButton.displayName = 'IconButton'
-ToggleIconButton.displayName = 'ToggleIconButton'
 SplitButton.displayName = 'SplitButton'
-
-export { ToggleButton, IconButton, ToggleIconButton, SplitButton }

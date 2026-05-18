@@ -4,16 +4,16 @@ import { useArgs } from 'storybook/preview-api';
 import { ToggleButton } from '../Button';
 
 const meta = {
-  title: "UI Kit/Foundational/Buttons/ToggleButton",
+  title: "UI Kit/Foundational/Button/ToggleButton",
   component: ToggleButton,
-  tags: ['autodocs']
+  // tags: ['autodocs']
 } satisfies Meta<typeof ToggleButton>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const toggleButton: Story = {
   args: {
     children: "Toggle",
     colour: "filled",

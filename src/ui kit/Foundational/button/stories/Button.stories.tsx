@@ -1,18 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import { Button, type ButtonProps } from '../Button';
+import { Button } from '../Button';
 
 const meta = {
-  title: "UI Kit/Foundational/Buttons/Button",
-  component: Button,
-  tags: ['autodocs']
-} satisfies Meta<ButtonProps>;
+  title: "UI Kit/Foundational/Button",
+  component: Button
+} satisfies Meta<typeof Button>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const button: Story = {
   args: {
     children: "Button",
     colour: "filled",

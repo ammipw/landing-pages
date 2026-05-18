@@ -4,16 +4,16 @@ import { useArgs } from 'storybook/preview-api';
 import { SplitButton } from '../Button';
 
 const meta = {
-  title: "UI Kit/Foundational/Buttons/SplitButton",
+  title: "UI Kit/Foundational/Button/SplitButton",
   component: SplitButton,
-  tags: ['autodocs']
+  // tags: ['autodocs']
 } satisfies Meta<typeof SplitButton>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const splitButton: Story = {
   args: {
     children: "Split",
     colour: "filled",

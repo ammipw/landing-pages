@@ -5,16 +5,16 @@ import { ToggleIconButton } from '../Button';
 import { Check } from 'lucide-react';
 
 const meta = {
-  title: "UI Kit/Foundational/Buttons/ToggleIconButton",
+  title: "UI Kit/Foundational/Button/ToggleIconButton",
   component: ToggleIconButton,
-  tags: ['autodocs']
+  // tags: ['autodocs']
 } satisfies Meta<typeof ToggleIconButton>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const toggleIconButton: Story = {
   args: {
     icon: <Check size={16} />,
     colour: "filled",

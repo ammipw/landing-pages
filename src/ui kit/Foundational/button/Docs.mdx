@@ -1,23 +1,27 @@
-import { Meta, Canvas } from '@storybook/addon-docs/blocks';
+import { Meta, Canvas, Controls, ArgTypes } from '@storybook/addon-docs/blocks';
 import * as ButtonStories from './stories/Button.stories';
 import * as ToggleButtonStories from './stories/ToggleButton.stories';
 import * as IconButtonStories from './stories/IconButton.stories';
 import * as ToggleIconButtonStories from './stories/ToggleIconButton.stories';
 import * as SplitButtonStories from './stories/SplitButton.stories';
 
-<Meta title="UI Kit/Foundational/Buttons" />
+<Meta title="UI Kit/Foundational/Button" />
 
 ## Button
-<Canvas of={ButtonStories.Default} />
+<Canvas of={ButtonStories.button} />
+<Controls of={ButtonStories.button} />
+<ArgTypes of={ButtonStories.button} />
 
 ## Toggle Button
-<Canvas of={ToggleButtonStories.Default} />
+<Canvas of={ToggleButtonStories.toggleButton} />
+<Controls of={ToggleButtonStories.toggleButton} />
+<ArgTypes of={ToggleButtonStories.toggleButton} />
 
 ## Icon Button
-<Canvas of={IconButtonStories.Default} />
+<Canvas of={IconButtonStories.iconButton} />
 
 ## Toggle Icon Button
-<Canvas of={ToggleIconButtonStories.Default} />
+<Canvas of={ToggleIconButtonStories.toggleIconButton} />
 
 ## Split Button
-<Canvas of={SplitButtonStories.Default} />
+<Canvas of={SplitButtonStories.splitButton} />

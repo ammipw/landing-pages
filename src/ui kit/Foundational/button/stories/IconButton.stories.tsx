@@ -4,16 +4,15 @@ import { IconButton } from '../Button';
 import { Menu } from 'lucide-react';
 
 const meta = {
-  title: "UI Kit/Foundational/Buttons/IconButton",
-  component: IconButton,
-  tags: ['autodocs']
+  title: "UI Kit/Foundational/Button/IconButton",
+  component: IconButton
 } satisfies Meta<typeof IconButton>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const iconButton: Story = {
   args: {
     icon: <Menu size={16} />,
     colour: "filled",

@@ -12,13 +12,18 @@ const config: StorybookConfig = {
   "core": {
     "disableTelemetry": true
   },
+  // .storybook/main.ts
   "typescript": {
     "reactDocgen": 'react-docgen-typescript',
     "reactDocgenTypescriptOptions": {
       "shouldExtractLiteralValuesFromEnum": true,
+      "shouldRemoveUndefinedFromOptional": true,
       "shouldExtractValuesFromUnion": true,
-      "savePropValueAsString": false,
-    },
-  },
+      "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+      }
+    }
+  }
 };
 export default config;
