@@ -1,13 +1,13 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { useArgs } from 'storybook/preview-api';
 
-import Button from './Button';
+import { ToggleButton } from '../Button';
 
 const meta = {
-  title: "UI Kit/Foundational/Button",
-  component: Button,
+  title: "UI Kit/Foundational/Buttons/ToggleButton",
+  component: ToggleButton,
   tags: ['autodocs']
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof ToggleButton>;
 
 export default meta;
 
@@ -15,22 +15,20 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Button",
-    variant: "default",
+    children: "Toggle",
     colour: "filled",
     size: "small",
     shape: "round",
+    defaultSelected: false,
     selected: false
   },
   render: (args) => {
-    const [{ selected }, updateArgs] = useArgs()
+    const [{selected}, updateArgs] = useArgs()
 
     function toggleSelected() {
-      if (args.variant === 'toggle') {
-        updateArgs({ selected: !selected })
-      }
+      updateArgs({selected: !selected})
     }
 
-    return <Button {...args} onClick={toggleSelected} selected={selected} />
+    return <ToggleButton {...args} onClick={toggleSelected} selected={selected} />
   }
 };
