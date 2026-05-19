@@ -1,18 +1,20 @@
 import styles from './Badge.module.css';
 
-interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
+export type BadgeProps = React.HTMLAttributes<HTMLSpanElement> & {
+  ref?: React.Ref<HTMLSpanElement>;
   value?: number;
   max_value?: number;
 }
 
-function Badge({ value, max_value = 999, ...props }: BadgeProps) {
+export default function Badge ({ ref, value, max_value = 99, children, ...props }: BadgeProps) {
   return (
-    <span {...props}
-      className={`${styles.badge} ${value !== undefined ? styles.large : styles.small} ${props.className || ''}`}
-    >
-      {value && (value > max_value ? `${max_value}+` : value)}
-    </span>
+    <div className={styles.badge}>
+      <span ref={ref} {...props}
+        className={`${styles.indicator} ${value !== undefined ? styles.large : styles.small} ${props.className || ''}`}
+      >
+        {value && (value > max_value ? `${max_value}+` : value)}
+      </span>
+      {children}
+    </div>
   )
 }
-
-export default Badge

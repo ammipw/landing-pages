@@ -4,7 +4,7 @@ import { useArgs } from 'storybook/preview-api';
 import { SplitButton } from '../Button';
 
 const meta = {
-  title: "UI Kit/Button/SplitButton",
+  title: "UI Kit/Buttons/SplitButton",
   component: SplitButton,
   // tags: ['autodocs']
 } satisfies Meta<typeof SplitButton>;
@@ -21,6 +21,9 @@ export const splitButton: Story = {
     shape: "round",
     defaultSelected: false,
     selected: false
+  },
+  parameters: {
+    controls: { exclude: ['ref'] }
   },
   render: (args) => {
     const [{selected}, updateArgs] = useArgs()

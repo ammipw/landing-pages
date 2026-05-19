@@ -4,7 +4,7 @@ import { useArgs } from 'storybook/preview-api';
 import { ToggleButton } from '../Button';
 
 const meta = {
-  title: "UI Kit/Button/ToggleButton",
+  title: "UI Kit/Buttons/ToggleButton",
   component: ToggleButton,
   // tags: ['autodocs']
 } satisfies Meta<typeof ToggleButton>;
@@ -21,6 +21,9 @@ export const toggleButton: Story = {
     shape: "round",
     defaultSelected: false,
     selected: false
+  },
+  parameters: {
+    controls: { exclude: ['ref'] }
   },
   render: (args) => {
     const [{selected}, updateArgs] = useArgs()

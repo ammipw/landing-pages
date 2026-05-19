@@ -5,7 +5,7 @@ import { ToggleIconButton } from '../Button';
 import { Check } from 'lucide-react';
 
 const meta = {
-  title: "UI Kit/Button/ToggleIconButton",
+  title: "UI Kit/Buttons/ToggleIconButton",
   component: ToggleIconButton,
   // tags: ['autodocs']
 } satisfies Meta<typeof ToggleIconButton>;
@@ -22,6 +22,9 @@ export const toggleIconButton: Story = {
     shape: "round",
     defaultSelected: false,
     selected: false
+  },
+  parameters: {
+    controls: { exclude: ['ref'] }
   },
   render: (args) => {
     const [{selected}, updateArgs] = useArgs()

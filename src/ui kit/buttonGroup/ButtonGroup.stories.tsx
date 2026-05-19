@@ -4,7 +4,7 @@ import ButtonGroup from './ButtonGroup';
 import {Button} from '../button/Button';
 
 const meta = {
-  title: "UI Kit/ButtonGroup",
+  title: "UI Kit/ButtonsGroup",
   component: ButtonGroup,
   tags: ['autodocs']
 } satisfies Meta<typeof ButtonGroup>;

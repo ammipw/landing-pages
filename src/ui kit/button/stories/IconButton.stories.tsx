@@ -4,7 +4,7 @@ import { IconButton } from '../Button';
 import { Menu } from 'lucide-react';
 
 const meta = {
-  title: "UI Kit/Button/IconButton",
+  title: "UI Kit/Buttons/IconButton",
   component: IconButton
 } satisfies Meta<typeof IconButton>;
 
@@ -18,6 +18,9 @@ export const iconButton: Story = {
     colour: "filled",
     size: "small",
     shape: "round"
+  },
+  parameters: {
+    controls: { exclude: ['ref'] }
   },
   render: (args) => {
     return <IconButton {...args} />
