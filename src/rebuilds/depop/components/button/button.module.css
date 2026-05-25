@@ -1,0 +1,44 @@
+.button {
+  color: var(--color-white);
+  border: 2px solid transparent;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  font-weight: var(--font-weight-bold);
+  font-family: var(--depop-font-sans);
+}
+
+.filled {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.outlined {
+  background-color: transparent;
+  color: var(--color-black);
+  border: 2px solid var(--color-black);
+}
+
+.text {
+  background-color: transparent;
+  color: var(--color-black);
+}
+
+.small {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.medium {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.large {
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.extra-large {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}

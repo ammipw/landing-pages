@@ -15,6 +15,9 @@ a, button {
 }
 
 :root {
+  --font-inter: 'Inter Variable';
+  --font-zalando-sans-semiexpanded: 'Zalando Sans SemiExpanded Variable';
+
   /* Colors */
   --stripe-color-primary: #0070f3;
   --stripe-color-secondary: #1c1c1e;
@@ -22,6 +25,8 @@ a, button {
   --stripe-color-text: #333333;
 
   /* Fonts */
-  --stripe-font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --stripe-font-sans: var(--font-sans);
   --stripe-font-size: 100%;
+  --depop-font-sans: var(--font-zalando-sans-semiexpanded), var(--font-sans);
 }
