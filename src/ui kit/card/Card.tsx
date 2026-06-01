@@ -3,7 +3,8 @@ import styles from './Card.module.css'
 
 type CardProps = HTMLAttributes<HTMLDivElement> & {
   size?: 'small' | 'medium' | 'large'
-  variant?: 'elevated' | 'outlined'
+  variant?: 'filled' | 'elevated' | 'outlined'
+  shape?: 'rounded' | 'square'
 }
 
 function Card({ size = 'medium', variant = 'elevated', children, ...props }: CardProps) {
