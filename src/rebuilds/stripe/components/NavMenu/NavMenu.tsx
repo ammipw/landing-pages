@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import styles from './NavMenu.module.css';
 import Button from '../Button/Button';
+import { ChevronDown } from 'lucide-react';
 
 const NavMenuContext = createContext<any>(null);
 
@@ -58,7 +59,7 @@ function NavLink({ title, href, children, onMouseEnter, onMouseLeave }: NavLinkP
   const { titles } = useContext(NavMenuContext);
 
   return (
-    <a title={title} href={href} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>{children}{titles.includes(title || '') ? ' >' : ''}</a>
+    <a title={title} href={href} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>{children}{titles.includes(title || '') ? <ChevronDown size={16} className="inline-block" /> : ''}</a>
   )
 }
 

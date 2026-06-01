@@ -5,6 +5,14 @@ import Button from './Button';
 const meta = {
   title: 'Rebuilds/Stripe/Button',
   component: Button,
+  argTypes: {
+    arrow: {
+      control: 'boolean',
+    },
+    outline: {
+      control: 'boolean',
+    },
+  },
   tags: ['autodocs'],
 } satisfies Meta<typeof Button>;
 

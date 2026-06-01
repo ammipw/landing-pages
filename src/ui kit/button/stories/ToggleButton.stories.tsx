@@ -6,6 +6,14 @@ import { ToggleButton } from '../Button';
 const meta = {
   title: "UI Kit/Buttons/ToggleButton",
   component: ToggleButton,
+  argTypes: {
+    defaultSelected: {
+      control: 'boolean',
+    },
+    selected: {
+      control: 'boolean',
+    },
+  },
   // tags: ['autodocs']
 } satisfies Meta<typeof ToggleButton>;
 

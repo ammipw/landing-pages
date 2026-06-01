@@ -42,13 +42,6 @@
   --border: 2px solid var(--stripe-color-primary);
 }
 
-.btn::after {
-  content: '>';
-  display: none;
-}
-
-.btn-arrow::after {
+.btn-arrow {
   display: inline-block;
-  margin-left: 8px;
-  transition: opacity 0.3s ease, margin-left 0.3s ease;
 }
