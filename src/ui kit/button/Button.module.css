@@ -63,27 +63,27 @@
     color: var(--color-gray-800);
   }
 
-  &.split {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-
-    & .content {
-      display: inline-block;
-      border: 1px solid black;
-      background-color: aqua;
-    }
-    
-    & .indicator {
-      display: inline-block;
-      border: 1px solid black;
-      background-color: lightcoral;
-    }
-  }
 }
 
 .btn.toggle {
   &.selected {
     --background-color-default: var(--color-blue-500);
+  }
+}
+
+.split {
+  display: inline-flex;
+  align-items: stretch;
+  gap: 0.25rem;
+  /* background-color: transparent;
+  padding: 0;
+  border: 2px solid black; */
+
+  & > :first-child {
+    @apply rounded-r-none;
+  }
+
+  & > :last-child {
+    @apply rounded-l-none;
   }
 }

@@ -1,4 +1,4 @@
-interface ThemeProps {}
+type ThemeProps = {}
 
 function Theme(props: ThemeProps) {
   return null

@@ -1,4 +1,4 @@
-interface ToastProps {}
+type ToastProps = {}
 
 function Toast(props: ToastProps) {
   return <div>Toast</div>

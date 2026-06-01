@@ -1,6 +1,6 @@
 import Input, { type InputProps } from "./Input"
 
-interface TextFieldProps extends InputProps {}
+type TextFieldProps = InputProps & {}
 
 function TextField({...props}: TextFieldProps) {
   return <Input {...props} />

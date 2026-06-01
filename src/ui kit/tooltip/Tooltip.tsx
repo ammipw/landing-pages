@@ -1,4 +1,4 @@
-interface TooltipProps {}
+type TooltipProps = {}
 
 function Tooltip(props: TooltipProps) {
   return null

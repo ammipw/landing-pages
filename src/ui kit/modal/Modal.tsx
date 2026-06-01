@@ -1,4 +1,4 @@
-interface ModalProps {}
+type ModalProps = {}
 
 function Modal(props: ModalProps) {
   return <div>Modal</div>

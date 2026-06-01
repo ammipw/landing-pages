@@ -1,4 +1,4 @@
-interface TabProps {}
+type TabProps = {}
 
 function Tab(props: TabProps) {
   return <div>Tab</div>

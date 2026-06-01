@@ -113,12 +113,12 @@ type SplitButtonProps = Omit<ButtonBaseProps, 'variant'>
 
 export const SplitButton = ({ ref, children, ...props }: SplitButtonProps) => {
   return (
-    <ButtonBase {...props} variant="split" className={styles.split}>
-      <span className='content'>{children}</span>
-      <span className='indicator'>
-        <ChevronUp size={16}/>
-      </span>
-    </ButtonBase>
+    // <div {...props} variant="split" className={styles.split}>
+    <div className={styles.split}>
+      <ButtonBase {...props} className={styles.content}>{children}</ButtonBase>
+      <IconButton {...props} icon={<ChevronUp />} className={styles.indicator} />
+    </div>
+    // </div>
   )
 }
 
