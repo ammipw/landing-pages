@@ -1,3 +1,9 @@
+.btn-reset {
+  all: unset;
+  display: inline-block;
+  cursor: pointer;
+}
+
 .btn {
   --padding-default: 0.5rem 1rem;
   --background-color-default: transparent;
