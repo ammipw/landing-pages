@@ -33,6 +33,13 @@ export const WithMaxValue: Story = {
   args: {
     value: 150,
     max_value: 99
+  }
+};
+
+export const StyledBadge: Story = {
+  args: {
+    value: 150,
+    max_value: 99
   },
   render: (args) => (
     <div className="relative inline-block">
